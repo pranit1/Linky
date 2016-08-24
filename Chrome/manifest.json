@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Linky",
+    "description": "Save URL plugin",
+    "version": "1.0",
+    "browser_action":
+     {
+      "default_popup":"pop.html",
+      "default_icon": "linky.png",
+      "default_title": "Make this page red"
+     },  
+    "background": 
+     {
+      "scripts": ["popup.js"], "persistent": false
+     }, 
+  "permissions": ["contextMenus","<all_urls>","storage","activeTab","tabs"],
+  "icons":{"128":"linky.png"}
+
+}
